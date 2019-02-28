@@ -15,6 +15,10 @@ const PORT = process.env.PORT || 8000;
 app.use(morgan("dev"));
 app.use(cors());
 
+// Allows request body to be parsed
+// app.use(express.json());
+// app.use(express.urlencoded({ extended: false }));
+
 // Initialize CRUD API for user's favorite team
 // Catch all route to render index file for all react routes
 app.use(express.static(path.resolve(__dirname, "client", "build")));
@@ -24,7 +28,7 @@ app.use("*", (req, res) => {
 });
 
 // Returns a status code and handles our errors
-app.use(function (err, req, res, next) {
+app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.json({
     code: err.status,
