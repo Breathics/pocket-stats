@@ -19,9 +19,19 @@ mongoose
   );
 
 router.post("/signup", (req, res) => {
-  const { username, password } = req.body;
+  const { email, username, password } = req.body;
 
-  console.log("Here is the username and password", username, password);
+  const createdUser = new User({
+    email,
+    username,
+    password
+  });
+
+  createdUser.save(function(err) {
+    if (err) return err;
+
+    res.send("User saved successfully!");
+  });
 });
 
 module.exports = router;
