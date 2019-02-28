@@ -16,8 +16,8 @@ app.use(morgan("dev"));
 app.use(cors());
 
 // Allows request body to be parsed
-// app.use(express.json());
-// app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
 // Initialize CRUD API for user's favorite team
 // Catch all route to render index file for all react routes
