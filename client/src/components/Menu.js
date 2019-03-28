@@ -1,13 +1,6 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
-
-const Bar = styled.div`
-    width: 35px;
-    height: 5px;
-    background-color: #ff9800;
-    margin: 6px 0;
-    transition: .4s;
-`;
+import { Link } from 'react-router-dom';
+import Hamburger from './Hamburger';
 
 class Menu extends Component {
     constructor(props) {
@@ -32,12 +25,11 @@ class Menu extends Component {
         const { toggleMenu } = this;
 
         return (
-            <div onClick={ toggleMenu }>
-                <Bar className={ active ? 'top open' : '' } />
-                <Bar className={ active ? 'middle open' : '' } />
-                <Bar className={ active ? 'bottom open' : '' } />
-                <div>
-                    
+            <div>
+                <Hamburger toggle={toggleMenu} active={active} />
+                <div className={active ? 'side-nav open' : 'side-nav'}>
+                    <Link to='/'>Home</Link>
+                    <Link to='/standings'>Standings</Link>
                 </div>
             </div>
         )
