@@ -14,9 +14,19 @@ img.nba_team_images {
   height: 21px;
 }
 
+.table {
+  background-color: white;
+}
+
 /*overriding thead alignment for standings container*/
 .table > thead:first-child > tr:first-child > th {
   text-align: center;
+}
+
+@media screen and (max-width: 420px) {
+  .standings {
+    font-size: 0.65rem;;
+  }
 }
 
 /*targets western/eastern conference images in standingsContainer*/
