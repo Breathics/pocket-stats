@@ -25,7 +25,7 @@ class Menu extends Component {
         const { toggleMenu } = this;
 
         return (
-            <div>
+            <div className="menu">
                 <Hamburger toggle={toggleMenu} active={active} />
                 <div className={active ? 'side-nav open' : 'side-nav'}>
                     <Link to='/'>Home</Link>

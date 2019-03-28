@@ -9,6 +9,7 @@ injectGlobal`
 
    html {
     background-color: #343a40;
+    
    }
 
    body {
@@ -16,7 +17,6 @@ injectGlobal`
    }
    
    #root {
-    font-family: 'Roboto', serif;
     overflow-x: hidden;
    }
 `;

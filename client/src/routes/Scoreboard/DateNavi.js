@@ -10,7 +10,6 @@ import {setViewedDate, fetchCalendarFromApi} from '../../actions/actionCreators'
 // Added button click effects
 // - Andy
 const DateButton = styled.button`
-    outline: none;
     border: 0;
     padding: 1em;
     height: 3.1em;
@@ -19,6 +18,10 @@ const DateButton = styled.button`
     box-shadow: 0 4px #ff9800;
     background-color: #eaeaea;
   
+    &:focus {
+        outline: 0;
+    }
+
     &:hover {
         background-color: #a0a0a0;
     }

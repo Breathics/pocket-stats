@@ -121,6 +121,11 @@ img.nba_team_images_scoreboard {
   transform: rotate(-225deg) translate(-9px, 8px);
 }
 
+.menu {
+  justify-self: end;
+  margin-right: 10%;
+}
+
 .hamburger {
   position: relative;
   z-index: 2;
@@ -145,6 +150,8 @@ img.nba_team_images_scoreboard {
   position: relative;
   top: 10%;
   margin-top: 5%;
+  font-size: 1.5rem;
+  color: white;
 }
 
 .open {

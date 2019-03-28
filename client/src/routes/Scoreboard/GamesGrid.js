@@ -10,8 +10,7 @@ const GamesGridContainer = styled.div`
   justify-items: center;
   grid-row-gap: 1rem;
   grid-template-rows: 1fr;
-  font-family: none;
-
+  
   @media (max-width: 450px) {
     margin-top: 1rem;
   }
