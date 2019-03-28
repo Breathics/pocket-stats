@@ -64,8 +64,8 @@ class Standings extends Component {
 
   render() {
     return (
-      <div className="row justify-content-center py-5">
-        <div className="col-lg-5 col-lg-offset-1 col-sm-12">
+      <div className="standings row justify-content-center py-5">
+        <div className="col-lg-5 col-lg-offset-1 col-11">
           <h3 className="western_conference">
             <img src="../assets/nba_logos/west.png" alt="" /> West Standings{" "}
           </h3>
@@ -84,7 +84,7 @@ class Standings extends Component {
             <tbody className="panel-body text-center">{this.westTeams()}</tbody>
           </Table>
         </div>
-        <div className="col-lg-5 col-sm-12">
+        <div className="col-lg-5 col-11">
           <h3 className="eastern_conference">
             <img src="../assets/nba_logos/east.png" alt="" /> East Standings
           </h3>

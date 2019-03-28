@@ -17,7 +17,7 @@ import styled from 'styled-components';
 
 const StyledFooter = styled.footer`
   width: 100vw;
-  height: 160px;
+  height: 100px;
   background-color: #343a40;
   box-shadow: 0 7px 6px -6px #777;
 `;

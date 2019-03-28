@@ -36,6 +36,9 @@ class Menu extends Component {
                 <Bar className={ active ? 'top open' : '' } />
                 <Bar className={ active ? 'middle open' : '' } />
                 <Bar className={ active ? 'bottom open' : '' } />
+                <div>
+                    
+                </div>
             </div>
         )
     }
